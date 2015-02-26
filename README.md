@@ -1,7 +1,10 @@
 # A happy micro-framework
 For the happy souls.
 
-## Run it
+## Setup
+`npm install`
+
+## Run
 `npm start`
 
 ## Roll it yourself
@@ -16,6 +19,7 @@ For the happy souls.
   - add.js
   - add.spec.js
   - testem.yml
+1. `npm start`
 
 ## Origin
 From https://github.com/digitalsadhu

@@ -1,0 +1,26 @@
+{
+  "name": "happyjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:dev": "testem .",
+    "test:ci": "testem ci .",
+    "test": "npm run test:ci",
+    "prebuild": "npm run test:ci",
+    "build": "browserify -t babelify index.js > bundle.js",
+    "serve": "http-server .",
+    "start": "npm run build && npm run serve"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^4.5.5",
+    "babelify": "^5.0.3",
+    "browserify": "^9.0.3",
+    "expect": "^1.6.0",
+    "http-server": "^0.7.5",
+    "mocha": "^2.1.0",
+    "testem": "^0.7.1"
+  }
+}

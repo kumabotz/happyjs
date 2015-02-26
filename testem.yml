@@ -1,0 +1,11 @@
+launchers:
+  Node:
+    command: node_modules/.bin/mocha --compilers js:babel/register -R tap ./**/*.spec.js
+    protocol: tap
+launch_in_dev:
+- Node
+src_files:
+  - "./**/*.spec.js"
+  - "index.js"
+  - "add.js"
+  - "add.spec.js"
